@@ -16,7 +16,8 @@ export default function LawsuitListSection() {
         : (
           responses && !error ?
             responses.page_data?.map((response) => (
-              <LawsuitListItem name={response.response_data.name}
+              <LawsuitListItem key={response.response_id}
+                               name={response.response_data.name}
                                id={response.response_id}
                                code={response.response_data.code}/>
             ))
