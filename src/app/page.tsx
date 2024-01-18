@@ -1,7 +1,7 @@
 'use client';
 import LawsuitListSection from '@/containers/home-page/LawsuitListSection/LawsuitListSection';
 import SearchBarSection from '@/containers/home-page/SearchBarSection/SearchBarSection';
-import { CNJSearchProvider } from '@/app/context/CNJSearchContext/CNJSearchContext';
+import { CNJSearchProvider } from '@/context/CNJSearchContext/CNJSearchContext';
 
 export default function Home() {
   return (

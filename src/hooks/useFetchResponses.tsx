@@ -1,7 +1,7 @@
 'use client';
 import { useContext, useEffect, useState } from 'react';
 import { RequestSearchResponse } from '@/types/Requests';
-import { CNJSearchContext } from '@/app/context/CNJSearchContext/CNJSearchContext';
+import { CNJSearchContext } from '@/context/CNJSearchContext/CNJSearchContext';
 
 export default function useFetchResponses() {
   const [responses, setResponses] = useState<RequestSearchResponse>();

@@ -1,7 +1,7 @@
 'use client';
 import styles from './SearchBarSection.module.scss'
 import { useContext, useState } from 'react';
-import { CNJSearchContext } from '@/app/context/CNJSearchContext/CNJSearchContext';
+import { CNJSearchContext } from '@/context/CNJSearchContext/CNJSearchContext';
 
 export default function SearchBarSection() {
 
