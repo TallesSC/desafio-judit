@@ -1,0 +1,34 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.item {
+  background: $color-black-400;
+  border-radius: 0 .35rem .35rem 0;
+  border-left: 2px solid $color-gray-600;
+  transition: .3s;
+  height: 64px;
+
+  &:hover {
+    background: $color-black-500;
+    opacity: .8;
+  }
+
+  .link {
+    padding: .75em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .code {
+      color: $color-gray-400;
+      padding-bottom: .25rem;
+      font-size: .925rem;
+    }
+
+    .name {
+      font-weight: bold;
+      @include multilineClamp(1);
+    }
+  }
+}

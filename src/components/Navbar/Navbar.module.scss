@@ -1,0 +1,21 @@
+@import '@/styles/variables';
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  background: $color-black-900;
+
+  .link {
+    display: grid;
+    place-items: center;
+
+    img {
+      width: 100px;
+      height: 100%;
+      object-fit: contain;
+      padding: .25rem;
+    }
+  }
+}

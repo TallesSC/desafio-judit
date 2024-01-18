@@ -1,0 +1,10 @@
+@import '@/styles/mixins';
+@import '@/styles/variables';
+
+.itemSkeleton {
+  background: $color-black-400;
+  height: 64px;
+  border-radius: 0 .35rem .35rem 0;
+
+  @include shimmer();
+}
