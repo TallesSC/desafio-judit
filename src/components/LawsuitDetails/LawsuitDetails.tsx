@@ -19,7 +19,7 @@ export default function LawsuitDetails({response}: {response: RequestResponseDat
           <h2 className={styles.classificationsHeader}>Classificações</h2>
           {
             response.response_data.classifications.map((classification) => (
-              <div key={classification._id} className={styles.classification}>
+              <div key={`${classification._id}_${classification.code}`} className={styles.classification}>
                 <p className={styles.classificationTitle}>{classification.name}</p>
                 <p className={styles.classificationCode}>#{classification.code}</p>
               </div>

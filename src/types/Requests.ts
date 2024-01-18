@@ -14,8 +14,9 @@ export interface RequestSearchResponse {
 }
 
 export interface RequestResponseData {
+  request_id: string,
   response_id: string,
-  status: 'pending' | 'completed',
+  status: 'created' | 'pending' | 'started' | 'cancelling' | 'cancelled' | 'completed',
   created_at: string,
   updated_at: string,
   response_data: {
@@ -46,3 +47,10 @@ export interface RequestResponseParams {
     lawsuitId: string
   };
 }
+
+export interface RequestSearchParams {
+  params: {
+    CNJ?: string,
+  };
+}
+

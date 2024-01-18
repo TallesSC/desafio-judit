@@ -3,7 +3,7 @@ import styles from './LawsuitDetailsSection.module.scss';
 import useFetchResponse from '@/hooks/useFetchResponse';
 import LawsuitDetails from '@/components/LawsuitDetails/LawsuitDetails';
 import { LawsuitDetailsSkeleton } from '@/components/LawsuitDetails/LawsuitDetailsSkeleton';
-import LoadingError from '@/components/LoadingError/LoadingError';
+import EmptyState from '@/components/EmptyState/EmptyState';
 
 
 export default function LawsuitDetailsSection({lawsuitId}: { lawsuitId: string }) {
@@ -18,7 +18,7 @@ export default function LawsuitDetailsSection({lawsuitId}: { lawsuitId: string }
           :
           response && !error ?
             <LawsuitDetails response={response}/>
-            : <LoadingError/>
+            : <EmptyState/>
       }
     </div>
   );

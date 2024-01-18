@@ -1,0 +1,38 @@
+@import '@/styles/variables';
+
+.wrapper {
+  padding: .75rem;
+  border-radius: .35rem;
+  background: $color-black-500;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  form {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    input {
+      color: $color-gray-300;
+      width: 100%;
+
+      &::placeholder {
+        color: $color-gray-500;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      margin-left: auto;
+      padding: .5rem 1rem;
+      background: $color-green-600;
+      border-radius: 50px;
+      color: white;
+      transition: .3s;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}

@@ -7,12 +7,6 @@ export const metadata: Metadata = {
   title: 'JUDIT',
   description: 'Desafio de Front-end para a empresa JUDIT',
   authors: [{name: 'Talles Siqueira Ceolin', url: 'https://github.com/TallesSC'}],
-  openGraph: {
-    locale: 'pt_BR',
-    type: 'website',
-    siteName: 'JUDIT',
-    images: '/images/logo-judit.svg'
-  },
 }
 
 export default function RootLayout({
